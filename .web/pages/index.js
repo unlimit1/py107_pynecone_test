@@ -42,19 +42,19 @@ return (
 <HStack>
 <Button colorScheme="red"
 onClick={() => Event([E("state.decrement", {})])}
-sx={{"borderRadius": "1em"}}>
-{`Decrement`}</Button>
+sx={{"borderRadius": "2em"}}>
+{`decrement`}</Button>
 <Heading sx={{"fontSize": "2em"}}>
 {state.count}</Heading>
-<Button colorScheme="green"
+<Button colorScheme="blue"
 onClick={() => Event([E("state.increment", {})])}
-sx={{"borderRadius": "1em"}}>
-{`Increment`}</Button>
+sx={{"borderRadius": "2em"}}>
+{`increment`}</Button>
 <NextHead>
 <title>{`Pynecone App`}</title>
-<meta name="description"
-content="A Pynecone app."/>
-<meta property="og:image"
-content="favicon.ico"/></NextHead></HStack>
+<meta content="A Pynecone app."
+name="description"/>
+<meta content="favicon.ico"
+property="og:image"/></NextHead></HStack>
 )
 }
